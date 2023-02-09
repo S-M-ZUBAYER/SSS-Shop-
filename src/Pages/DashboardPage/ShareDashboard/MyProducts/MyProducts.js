@@ -7,7 +7,7 @@ import EachProduct from './EachProduct';
 const MyProducts = () => {
     const { user } = useContext(AuthContext);
 
-    const url = `http://localhost:5000/newProducts?email=${user?.email}`;
+    const url = `https://cricket-lover-server-site-s-m-zubayer.vercel.app/newProducts?email=${user?.email}`;
 
     const { data: myProducts = [], isLoading, refetch } = useQuery({
         queryKey: ['myProducts', user?.email],

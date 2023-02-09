@@ -13,7 +13,7 @@ const WishList = () => {
 
     const { user } = useContext(AuthContext);
 
-    const url = `http://localhost:5000/newBookings?email=${user?.email}`;
+    const url = `https://cricket-lover-server-site-s-m-zubayer.vercel.app/newBookings?email=${user?.email}`;
 
     const { data: myOrders = [], isLoading, refetch } = useQuery({
         queryKey: ['bmyOrders', user?.email],
@@ -33,7 +33,7 @@ const WishList = () => {
 
 
     const handleToDelete = (order) => {
-        fetch(`http://localhost:5000/newBooking/${order?._id}`, {
+        fetch(`https://cricket-lover-server-site-s-m-zubayer.vercel.app/newBooking/${order?._id}`, {
             method: "DELETE",
             headers: {
                 authorization: `bearer ${localStorage.getItem('ACCESS_TOKEN')}`

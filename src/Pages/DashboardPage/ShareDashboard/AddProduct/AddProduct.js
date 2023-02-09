@@ -57,7 +57,7 @@ const AddProduct = () => {
                         description,
                         insertTime
                     }
-                    fetch('http://localhost:5000/newProducts', {
+                    fetch('https://cricket-lover-server-site-s-m-zubayer.vercel.app/newProducts', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json',

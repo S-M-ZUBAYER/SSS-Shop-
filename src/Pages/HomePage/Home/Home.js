@@ -24,7 +24,7 @@ const Home = () => {
 
     }, [])
 
-    const url = `http://localhost:5000/newProducts`;
+    const url = `https://cricket-lover-server-site-s-m-zubayer.vercel.app/newProducts`;
 
     const { data: products = [], isLoading, refetch } = useQuery({
         queryKey: ['products'],

@@ -23,7 +23,7 @@ const AdvertiseCard = ({ product, setBookingProduct }) => {
     const { name, productName, image, sellerImg, resalePrice, date, quality, condition, phone, sellReason, location, description, originalPrice, duration } = product;
     return (
         <div>
-            <div className="flex flex-col max-w-lg p-6 bg-white shadow-2xl  overflow-hidden rounded-lg shadow-md text-gray-900">
+            <div className="flex flex-col max-w-lg p-6 bg-gradient-to-t from-blue-900 via-slate-900 to-violet-700  overflow-hidden rounded-lg shadow-md text-gray-200">
                 <div className="flex items-center space-x-4 mb-3">
                     <img alt="" src={sellerImg} className="object-cover w-12 h-12 rounded-full shadow bg-gray-500" />
 
